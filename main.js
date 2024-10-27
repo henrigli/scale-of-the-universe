@@ -46,31 +46,59 @@ controls.maxAzimuthAngle = Math.PI * 2;
 controls.minPolarAngle = Math.PI / 2;
 controls.maxPolarAngle = Math.PI / 2;
 
-const spaceTexture = new THREE.TextureLoader().load("images/space.jpeg");
+const spaceTexture = new THREE.TextureLoader().load(
+  "https://ibe1idstddtkn2b7.public.blob.vercel-storage.com/planets/space-MJ5mlGLKFtwOtA67NUk8itn6c6ClAG.jpeg"
+);
 scene.background = spaceTexture;
 
-const sunTexture = new THREE.TextureLoader().load("images/sun.jpeg");
+const sunTexture = new THREE.TextureLoader().load(
+  "https://ibe1idstddtkn2b7.public.blob.vercel-storage.com/planets/sun-0mXI0Wv0lx708ZS4KSpcxWYNJfBYty.jpeg"
+);
 
-const mercuryTexture = new THREE.TextureLoader().load("images/mercury.webp");
-const mercuryNmap = new THREE.TextureLoader().load("images/mercury_nmap.webp");
+const mercuryTexture = new THREE.TextureLoader().load(
+  "https://ibe1idstddtkn2b7.public.blob.vercel-storage.com/planets/mercury-ajWqIiWde1vP0KyWLaBPnpzcEQiQOk.webp"
+);
+const mercuryNmap = new THREE.TextureLoader().load(
+  "https://ibe1idstddtkn2b7.public.blob.vercel-storage.com/planets/mercury_nmap-YVzLEcuqp9qzRW7plabwhlEwgB4iuS.jpg"
+);
 
-const venusTexture = new THREE.TextureLoader().load("images/venus.webp");
+const venusTexture = new THREE.TextureLoader().load(
+  "https://ibe1idstddtkn2b7.public.blob.vercel-storage.com/planets/venus-WoHzyajKEyrB2ZKaz4FtbnC4rbcPOm.webp"
+);
 
-const earthTexture = new THREE.TextureLoader().load("images/earth.webp");
-const earthNmap = new THREE.TextureLoader().load("images/earth_nmap.webp");
+const earthTexture = new THREE.TextureLoader().load(
+  "https://ibe1idstddtkn2b7.public.blob.vercel-storage.com/planets/earth-T7WNfAnHwcyZV2yauaYdCx3vMjrYCb.webp"
+);
+const earthNmap = new THREE.TextureLoader().load(
+  "https://ibe1idstddtkn2b7.public.blob.vercel-storage.com/planets/earth_nmap-dbKruarFp0vck5FwpaqOY5WR4E1BFI.jpg"
+);
 
-const marsTexture = new THREE.TextureLoader().load("images/mars.webp");
-const marsNmap = new THREE.TextureLoader().load("images/mars_nmap.webp");
+const marsTexture = new THREE.TextureLoader().load(
+  "https://ibe1idstddtkn2b7.public.blob.vercel-storage.com/planets/mars-0MBnroWZf1cFW3PzsDXZoawteRLnRn.webp"
+);
+const marsNmap = new THREE.TextureLoader().load(
+  "https://ibe1idstddtkn2b7.public.blob.vercel-storage.com/planets/mars_nmap-04bhTprd1neRJzrJFKBFkgX9vAGrXH.webp"
+);
 
-const jupiterTexture = new THREE.TextureLoader().load("images/jupiter.jpg");
+const jupiterTexture = new THREE.TextureLoader().load(
+  "https://ibe1idstddtkn2b7.public.blob.vercel-storage.com/planets/jupiter-OddCFUD2BY8mBaMq8ffIwxItkz2CGr.jpg"
+);
 
-const saturnTexture = new THREE.TextureLoader().load("images/saturn.jpeg");
+const saturnTexture = new THREE.TextureLoader().load(
+  "https://ibe1idstddtkn2b7.public.blob.vercel-storage.com/planets/saturn-PPlTfnGYXyidsc54KIE4iltNQ4ePSE.jpeg"
+);
 
-const uranusTexture = new THREE.TextureLoader().load("images/uranus.webp");
+const uranusTexture = new THREE.TextureLoader().load(
+  "https://ibe1idstddtkn2b7.public.blob.vercel-storage.com/planets/uranus-7ISLqtHki75SJg6WrOleFB953vbz3O.webp"
+);
 
-const neptuneTexture = new THREE.TextureLoader().load("images/neptune.webp");
+const neptuneTexture = new THREE.TextureLoader().load(
+  "https://ibe1idstddtkn2b7.public.blob.vercel-storage.com/planets/neptune-Uf3MQOK5HU33ZO4IvpJRKvzZGG5yzP.webp"
+);
 
-const plutoTexture = new THREE.TextureLoader().load("images/pluto.webp");
+const plutoTexture = new THREE.TextureLoader().load(
+  "https://ibe1idstddtkn2b7.public.blob.vercel-storage.com/planets/pluto-iR1FMFx8JbygXugEhMtf6xXnEouN5B.webp"
+);
 
 const sun = new THREE.Mesh(
   new THREE.SphereGeometry(100, 32, 32),
